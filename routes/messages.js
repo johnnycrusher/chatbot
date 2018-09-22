@@ -11,8 +11,8 @@ router.post("/messages", (req, res) => {
 	let message = {
 		ip: req.ip,
 		timestamp: new Date(),
-		user: req.param("user"),
-		text: req.param("text")
+		user: req.body.username,
+		text: req.body.text
 	};
 	conversation.push(message);
 	res.json(message);
