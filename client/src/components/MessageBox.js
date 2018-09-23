@@ -6,7 +6,6 @@ import { sendMessage } from "../action/index";
 
 export class MessageBox extends Component {
 	onSubmit(values) {
-		console.log(values);
 		this.props.sendMessage(values);
 	}
 

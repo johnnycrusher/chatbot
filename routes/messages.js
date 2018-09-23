@@ -4,7 +4,7 @@ const router = express.Router();
 let conversation = [];
 
 router.get("/messages", (req, res) => {
-	res.json(conversation);
+	res.send(conversation);
 });
 
 router.post("/messages", (req, res) => {
